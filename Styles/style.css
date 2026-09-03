@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(16, 179, 234);
+}
+
+.cabecalho{
+    display: flex;
+    background-color: rgb(77, 89, 100);
+}
+
+.cabecalho-titulo{
+    color: black;
+    text-align: left;
+    padding: 20px;
+    margin-right: auto;
+}
+
+#burguer{
+    background-color: grey;
+    color: whitesmoke;
+    display: none;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.cabecalho-menu{
+    margin-top: 25px;
+}
+
+.cabecalho-menu-lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+.cabecalho-menu-lista-link-texto{
+    font-size: 15px;
+}
+
+#menu-icons{
+    display: flex;
+    padding-right: 3px;
+}
+
+.cabecalho-menu-lista-links{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: right;
+}
+
+@media screen and (max-width: 992px){
+    .cabecalho-titulo{
+    color: black;
+    text-align: left;
+    padding: 20px;
+    margin-right: auto;
+}
+
+    .cabecalho-menu-lista-links{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: right;
+}
+
+    .cabecalho-menu-lista-link-texto{
+        display: none;
+    }
+
+    #menu-icons{
+        display: flex;
+    }
+
+    #burguer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cabecalho{
+        display: block;
+    }
+    
+    .cabecalho-titulo{
+        display: flex;
+    }
+    
+    #burguer{
+        display: inline-block;
+        justify-content: right;
+    }
+
+    #burguer:hover{
+    background-color: whitesmoke;
+    color: black;
+    }
+
+    #menu-icons{
+    display: flex;
+    padding-right: 3px;
+    }
+
+    .cabecalho-menu-lista-links{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    }
+
+    .cabecalho-menu-lista-link-texto{
+        display: flex;
+    }
+
+    .cabecalho-menu{
+    margin-top: 25px;
+    display: block;
+    align-items: center;
+    }
+
+    .cabecalho-menu-lista{
+        display: block;
+    }
+
+    .cabecalho-menu-lista > li{
+        margin-right: 10px;
+    }
+
+}
